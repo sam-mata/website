@@ -29,7 +29,9 @@
 			<i>a webcam narrator in the style of a certain nature documentary presenter</i>.
 		</p>
 		<p>Want some david attenbot in your life?</p>
-		<button class="rounded bg-zinc-800 px-1 text-zinc-50">Start attenbot</button>
+		<button class="rounded bg-zinc-800 px-2 text-zinc-50 hover:scale-105 text-xl">
+			Start attenbot
+		</button>
 	</section>
 
 	<section class="">

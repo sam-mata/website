@@ -6,14 +6,16 @@ My personal website with personal details, contact information, and a portfolio 
 
 ## Tools Used
 
-| Name     | Usage                | Documentation                                   | Version |
-| -------------- | -------------------------- | ----------------------------------------------- | ------- |
-| [SvelteKit](https://kit.svelte.dev/) | Primary Framework | [docs](https://kit.svelte.dev/docs/introduction) | 2.0.0 |
-| [Vercel](https://vercel.com/dashboard) | Hosting | [docs](https://vercel.com/docs) | 33.0.1 |
-| [Typescript](https://www.typescriptlang.org/) | Config Language | [docs](https://www.typescriptlang.org/docs/) | 5.0.0 |
-| [Tailwind](https://tailwindcss.com/) | CSS Styling | [docs](https://tailwindcss.com/docs/installation) | 3.4.0 |
-| [Prettier](https://prettier.io/) | Code formatter | [docs](https://prettier.io/docs/en/) | 3.1.1 |
-| [Vite](https://vitejs.dev/) | Development environment | [docs](https://v4.vitejs.dev/) | 5.0.3 |
+| Name                                          | Usage                   | Documentation                                     | Version |
+| --------------------------------------------- | ----------------------- | ------------------------------------------------- | ------- |
+| [SvelteKit](https://kit.svelte.dev/)          | Primary Framework       | [docs](https://kit.svelte.dev/docs/introduction)  | 2.0.0   |
+| [Vercel](https://vercel.com/dashboard)        | Hosting                 | [docs](https://vercel.com/docs)                   | 33.0.1  |
+| [Typescript](https://www.typescriptlang.org/) | Config Language         | [docs](https://www.typescriptlang.org/docs/)      | 5.0.0   |
+| [Tailwind](https://tailwindcss.com/)          | CSS Styling             | [docs](https://tailwindcss.com/docs/installation) | 3.4.0   |
+| [Prettier](https://prettier.io/)              | Code formatter          | [docs](https://prettier.io/docs/en/)              | 3.1.1   |
+| [Vite](https://vitejs.dev/)                   | Development environment | [docs](https://v4.vitejs.dev/)                    | 5.0.3   |
+
+_Icons sourced from [Feathericons](https://feathericons.com/) and optimised with [SVGOMG](https://jakearchibald.github.io/svgomg/)._
 
 ---
 
