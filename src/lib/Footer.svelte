@@ -1,4 +1,4 @@
-<footer class="m-6 flex justify-center items-stretch">
+<footer class="flex items-stretch justify-center m-6">
 	<a href="https://github.com/sam-mata" class="px-5 hover:scale-110">
 		<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
 			<path
