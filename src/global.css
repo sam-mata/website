@@ -10,7 +10,7 @@
     }
 
     h1 {
-        @apply text-7xl font-bold text-zinc-50 py-4;
+        @apply py-4 font-bold text-7xl text-zinc-50;
     }
 
     h2 {
@@ -22,7 +22,7 @@
     }
     
     a {
-        @apply text-zinc-50 underline;
+        @apply underline text-zinc-50;
     }
 
     p {
@@ -36,7 +36,7 @@
 
 @layer components {
     .section-title {
-        @apply text-4xl font-medium text-zinc-50 py-2;
+        @apply py-2 text-4xl font-medium text-zinc-50;
     }
 }
 

@@ -1,7 +1,7 @@
 <script>
 	import "../global.css";
-	import "$lib/Header.svelte";
 	import Footer from "$lib/Footer.svelte";
+	import AttenBot from "$lib/AttenBot.svelte";
 </script>
 
 <body class="flex flex-col items-center justify-center m-4">
@@ -11,31 +11,30 @@
 	</section>
 
 	<section>
-		<h3 class="section-title">About me</h3>
-		<p>Hi! I'm Sam, a developer based in Wellington, New Zealand.</p>
+		<h3 class="section-title">about me</h3>
+		<p>Hi! I'm Sam Mata, a developer based in Wellington, New Zealand.</p>
 		<p>
-			I'm currently studying AI at Victoria University, while I work as a full stack web
-			developer at Ordino.
+			After completing my BSc in Computer Science in 2023, I'm now studing towards an honors
+			degree in <a href="https://www.wgtn.ac.nz/cdsai"> AI at Victoria University</a>.
+		</p>
+		<p>
+			At the same time I work as a full stack web developer at
+			<a href="https://github.com/OrdinoNZ">Ordino</a>, where I lead development on a progress
+			tracking app for dental prosthetics.
 		</p>
 	</section>
 
 	<section>
-		<h3 class="section-title">Projects</h3>
+		<h3 class="section-title">recent work</h3>
 		<p>
-			For some christmas laughs, I made <a
-				href="https://twitter.com/charliebholtz/status/1724815159590293764">my very own</a
-			>
-			"david attenbot" -
-			<i>a webcam narrator in the style of a certain nature documentary presenter</i>.
+			When I have time, I like to work on my own personal projects that can be found on
+			<a href="https://github.com/sam-mata">my github</a>.
 		</p>
-		<p>Want some david attenbot in your life?</p>
-		<button class="rounded bg-zinc-800 px-2 text-zinc-50 hover:scale-105 text-xl">
-			Start attenbot
-		</button>
+		<!-- <AttenBot /> -->
 	</section>
 
 	<section class="">
-		<h3 class="section-title">Contact</h3>
+		<h3 class="section-title">get in touch</h3>
 		<p>If you have a project or opportunity you'd like to discuss, please get in touch.</p>
 		<p>
 			Email : <a type="email" href="mailto:sammatanz@gmail.com">sammatanz@gmail.com</a><br />
