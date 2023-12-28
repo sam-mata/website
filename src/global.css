@@ -5,38 +5,12 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply scroll-smooth bg-zinc-900 font-inter text-zinc-400;
-    }
-
-    h1 {
-        @apply py-4 font-bold text-7xl text-zinc-50;
-    }
-
-    h2 {
-        @apply text-4xl;
-    }
-
-    h3 {
-        @apply text-4xl text-blue-200;
-    }
-    
     a {
         @apply underline text-zinc-50;
     }
 
     p {
         @apply py-2;
-    }
-
-    section {
-        @apply py-14 lg:w-3/4;
-    }
-}
-
-@layer components {
-    .section-title {
-        @apply py-2 text-4xl font-medium text-zinc-50;
     }
 }
 

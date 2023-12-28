@@ -1,17 +1,18 @@
 <script>
 	import "../global.css";
+	import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
 	import Footer from "$lib/Footer.svelte";
 	import AttenBot from "$lib/AttenBot.svelte";
 </script>
 
 <body class="flex flex-col items-center justify-center m-4">
-	<section>
-		<h1>Kia Ora! I'm Sam.</h1>
-		<h2>Web Developer & VUW Student</h2>
+	<section class="py-14 lg:w-2/3">
+		<h1 class="py-4 font-bold text-7xl text-zinc-50">Kia Ora! I'm Sam.</h1>
+		<h2 class="text-4xl">AI/ML Student & Web Developer</h2>
 	</section>
 
-	<section>
-		<h3 class="section-title">about me</h3>
+	<section class="py-14 md:w-2/3">
+		<h1 class="py-2 text-4xl font-semibold text-zinc-50">about me</h1>
 		<p>Hi! I'm Sam Mata, a developer based in Wellington, New Zealand.</p>
 		<p>
 			After completing my BSc in Computer Science in 2023, I'm now studing towards an honors
@@ -24,8 +25,8 @@
 		</p>
 	</section>
 
-	<section>
-		<h3 class="section-title">recent work</h3>
+	<section class="py-14 md:w-2/3">
+		<h1 class="py-2 text-4xl font-semibold text-zinc-50">recent work</h1>
 		<p>
 			When I have time, I like to work on my own personal projects that can be found on
 			<a href="https://github.com/sam-mata">my github</a>.
@@ -33,8 +34,8 @@
 		<!-- <AttenBot /> -->
 	</section>
 
-	<section class="">
-		<h3 class="section-title">get in touch</h3>
+	<section class="py-14 md:w-2/3">
+		<h1 class="py-2 text-4xl font-semibold text-zinc-50">get in touch</h1>
 		<p>If you have a project or opportunity you'd like to discuss, please get in touch.</p>
 		<p>
 			Email : <a type="email" href="mailto:sammatanz@gmail.com">sammatanz@gmail.com</a><br />
