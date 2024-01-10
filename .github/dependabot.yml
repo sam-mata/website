@@ -1,6 +1,15 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
+    - package-ecosystem: "npm"
+      directory: "/"
+      schedule:
+          interval: "daily"
+          time: "20:00"
+      assignees:
+          - "sam-mata"
+          - "dependabot"
+      labels:
+          - "dependencies"
+          - "non-functional"
+      reviewers:
+          - "sam-mata"
