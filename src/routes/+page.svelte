@@ -2,6 +2,13 @@
 	import "../global.css";
 	import Footer from "$lib/Footer.svelte";
 	import AttenBot from "$lib/AttenBot.svelte";
+
+	import { dev } from "$app/environment";
+	import { inject } from "@vercel/analytics";
+	import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
+
+	inject({ mode: dev ? "development" : "production" });
+	injectSpeedInsights();
 </script>
 
 <body class="flex flex-col items-center justify-center m-4">
