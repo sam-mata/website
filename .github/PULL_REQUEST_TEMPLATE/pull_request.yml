@@ -1,0 +1,44 @@
+name: Pull Request Template
+description: Default Template for Pull Requests
+title: "PR: "
+assignees: ["sam-mata"]
+body:
+    - type: markdown
+      attributes:
+          value: "Please provide the following information:"
+    - type: input
+      id: title
+      attributes:
+          label: PR Title
+          description: "A concise title for the proposed change."
+          placeholder: "Fixing bug in..."
+      validations:
+          required: true
+    - type: textarea
+      id: description
+      attributes:
+          label: Description
+          description: "A detailed description of the changes proposed."
+          placeholder: "The changes include..."
+      validations:
+          required: true
+    - type: checkboxes
+      id: type-of-change
+      attributes:
+          label: Type of Change
+          description: "Select what type of change your PR introduces:"
+          options:
+              - label: Bug fix
+              - label: New feature
+              - label: Design change
+              - label: Documentation or structural update
+              - label: Dependency Changes
+    - type: dropdown
+      id: issue-related
+      attributes:
+          label: Related Issue
+          description: "If your PR addresses an issue, please link it here."
+          options:
+              - "Issue #1"
+              - "Issue #2"
+              - "None"

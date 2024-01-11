@@ -3,8 +3,7 @@ name: Design Change
 about: Changes to design, aesthetics, and content.
 title: "[DESIGN]"
 labels: design
-assignees: ''
-
+assignees: ""
 ---
 
 **Proposed change**
