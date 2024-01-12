@@ -1,0 +1,33 @@
+name: Syntax and Style Check
+
+on: [push, pull_request]
+
+jobs:
+    check-syntax:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "20"
+
+            - name: Cache npm dependencies
+              uses: actions/cache@v2
+              with:
+                  path: ~/.npm
+                  key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Check TypeScript syntax
+              run: npx tsc --noEmit
+
+            - name: Lint with ESLint
+              run: npx eslint '**/*.tsx' --quiet

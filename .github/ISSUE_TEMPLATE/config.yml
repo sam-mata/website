@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+    - name: Repository Home
+      url: https://github.com/sam-mata/website
+      about: View current issues.
+    - name: Contact
+      url: https://github.com/sam-mata
+      about: View my other work.

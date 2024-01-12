@@ -1,0 +1,22 @@
+name: Mark stale issues and pull requests
+
+on:
+    schedule:
+        - cron: "0 20 * * *"
+jobs:
+    stale:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Mark stale issues and pull requests
+              uses: actions/stale@v4
+              with:
+                  repo-token: ${{ secrets.GITHUB_TOKEN }}
+                  stale-issue-message: "This issue has been inactive for 30 days. It is automatically marked as stale. Please update the issue if it is still relevant."
+                  stale-pr-message: "This PR has been inactive for 30 days. It is automatically marked as stale. Please update the PR if it is still relevant."
+                  days-before-stale: 10
+                  days-before-close: 30
+                  stale-issue-label: "stale"
+                  stale-pr-label: "stale"
+                  exempt-issue-labels: "pinned, security"
+                  exempt-pr-labels: "pinned, security"
