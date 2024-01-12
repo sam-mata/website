@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.0.4
     version: 0.0.4
   openai:
-    specifier: ^4.24.3
-    version: 4.24.3
+    specifier: ^4.24.6
+    version: 4.24.6
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -2156,8 +2156,8 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /openai@4.24.3:
-    resolution: {integrity: sha512-trXt1hwYmJTwQCzYZiKijOYslqvterDwohTncadZOTXXJh+XV4Jf9KcLP9dDRlXh0mAxGXaVzbpiNgAXa2khNQ==}
+  /openai@4.24.6:
+    resolution: {integrity: sha512-ekNHYtPHnxGlwu6SQClRxIPPi34Gy/6WqpUIT0wrX+tgCXZZEmmgnWeep2aYIGPceMj9cIIY5sS70NBJ1FHRcQ==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.3
