@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,36 +6,18 @@
 
 @layer base {
 	html {
-		@apply scroll-smooth bg-zinc-900 font-inter text-zinc-400;
+		@apply scroll-smooth bg-stone-300;
 	}
 
 	h1 {
-		@apply py-4 font-bold text-7xl text-zinc-50;
+		@apply font-raleway;
 	}
 
 	h2 {
-		@apply text-4xl;
-	}
-
-	h3 {
-		@apply text-4xl text-blue-200;
-	}
-
-	a {
-		@apply underline text-zinc-50;
+		@apply font-extrabold uppercase font-montserrat text-stone-800;
 	}
 
 	p {
-		@apply py-2;
-	}
-
-	section {
-		@apply py-14 lg:w-3/4;
-	}
-}
-
-@layer components {
-	.section-title {
-		@apply py-2 text-4xl font-medium text-zinc-50;
+		@apply font-overpass;
 	}
 }

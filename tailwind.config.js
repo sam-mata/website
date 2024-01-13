@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
+        'raleway': ['Raleway', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'overpass': ['Overpass', 'sans-serif']
       },
     },
   },
