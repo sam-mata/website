@@ -1,51 +1,52 @@
 <script>
 	import "../global.css";
 	import Footer from "$lib/Footer.svelte";
-	import AttenBot from "$lib/AttenBot.svelte";
-
-	import { dev } from "$app/environment";
-	import { inject } from "@vercel/analytics";
-	import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
-
-	inject({ mode: dev ? "development" : "production" });
-	injectSpeedInsights();
 </script>
 
-<body class="flex flex-col items-center justify-center m-4">
-	<section>
-		<h1>Kia Ora! I'm Sam.</h1>
-		<h2>Web Developer & VUW Student</h2>
+<body class="flex flex-col items-center m-8 lg:mx-auto lg:w-2/3">
+	<section class="flex flex-col items-center md:flex-row">
+		<h1 class="font-black font-raleway text-[150px] text-stone-800">SM.</h1>
+		<div class="md:pl-6">
+			<h2>Kia Ora!</h2>
+			<p>I'm Sam Mata, a developer based in Wellington.</p>
+			<p>AI Student at VUW & Web Dev at Ordino</p>
+		</div>
 	</section>
 
-	<section>
-		<h3 class="section-title">about me</h3>
-		<p>Hi! I'm Sam Mata, a developer based in Wellington, New Zealand.</p>
+	<div />
+
+	<section class="pt-12 pb-24">
+		<h2>My Work</h2>
 		<p>
-			After completing my BSc in Computer Science in 2023, I'm now studing towards an honors
-			degree in <a href="https://www.wgtn.ac.nz/cdsai"> AI at Victoria University</a>.
+			After completing my <a
+				href="https://www.wgtn.ac.nz/explore/degrees/science/overview?major=computer-science"
+				>BSc in Computer Science</a
+			>
+			in 2023, I'm now studying towards an
+			<a
+				href="https://www.wgtn.ac.nz/explore/postgraduate-programmes/bachelor-of-science-with-honours/requirements?subject=artificial-intelligence-bsc-hons"
+			>
+				honors degree in artificial intelligence</a
+			> at Victoria University of Wellington. My coursework is mostly focused on machine learning,
+			particularly with regard to natural language processing and computer vision.
 		</p>
 		<p>
-			At the same time I work as a full stack web developer at
-			<a href="https://github.com/OrdinoNZ">Ordino</a>, where I lead development on a progress
-			tracking app for dental prosthetics.
+			At the same time I work as a full-stack web developer at <a
+				href="https://github.com/OrdinoNZ">Ordino</a
+			>, an in-house software team based in Lower Hutt. In this role I lead development of a
+			progress tracking app for dental technicians.
 		</p>
 	</section>
 
-	<section>
-		<h3 class="section-title">recent work</h3>
-		<p>
-			When I have time, I like to work on my own personal projects that can be found on
-			<a href="https://github.com/sam-mata">my github</a>.
-		</p>
-		<!-- <AttenBot /> -->
-	</section>
+	<div />
 
-	<section class="">
-		<h3 class="section-title">get in touch</h3>
-		<p>If you have a project or opportunity you'd like to discuss, please get in touch.</p>
+	<section>
+		<h2>Contact</h2>
 		<p>
-			Email : <a type="email" href="mailto:sammatanz@gmail.com">sammatanz@gmail.com</a><br />
-			Ph : <a type="tel" href="tel:0274171172">(+64) 27 417 1172</a>
+			While I keep busy with study and work, If you have a project or opportunity you'd like
+			to discuss, please get in touch at <a href="mailto:sammatanz@gmail.com"
+				>sammatanz@gmail.com</a
+			>.
 		</p>
 	</section>
 </body>
