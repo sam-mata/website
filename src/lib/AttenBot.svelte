@@ -8,15 +8,13 @@
 	import.meta.env.OPENAI_API_KEY;
 	import.meta.env.ELEVENLABS_API_KEY;
 	import.meta.env.ELEVENLABS_VOICE;
-	const openaiApiKey = import.meta.env.OPENAI_API_KEY;
-	const elevenLabsApiKey = import.meta.env.ELEVENLABS_API_KEY;
-	const elevenLabsVoice = import.meta.env.ELEVENLABS_VOICE;
+	const openaiApiKey = import.meta.env.VITE_OPENAI_API_KEY;
 
 	// Get Photo From Webcam
 	let videoStream,
-		status = "Awaiting Image...",
-		photo,
-		script = "No Script Generated.",
+		status = "Awaiting Webcam Access... ⌛",
+		image,
+		script = "No Script Generated",
 		audio = wait;
 
 	onMount(async () => {
@@ -24,7 +22,9 @@
 			videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
 			const videoElement = document.querySelector("#webcam");
 			videoElement.srcObject = videoStream;
+			status = "Awaiting Image... 📷";
 		} catch (error) {
+			status = "Webcam Permissions Failed ❌";
 			console.error("Error accessing the webcam", error);
 		}
 	});
@@ -32,28 +32,58 @@
 	function takePhoto() {
 		const videoElement = document.querySelector("#webcam");
 		const canvas = document.createElement("canvas");
-		canvas.width = videoElement.videoWidth;
-		canvas.height = videoElement.videoHeight;
+		canvas.width = 500;
+		canvas.height = 500;
 		canvas.getContext("2d").drawImage(videoElement, 0, 0, canvas.width, canvas.height);
-		photo = canvas.toDataURL("image/png");
-		summarise();
+		let photo = canvas.toDataURL("image/png");
+		status = "Image Taken 📸";
+		status = "Generating Script... 📝";
+		summarise(photo);
 	}
 
-	// Get Summary From Photo
+	async function summarise(photo) {
+		try {
+			status = "Sending image to OpenAI... 🔄";
 
-	// Get Script From Summary
+			const response = await fetch("/api/openai", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ photo }),
+			});
 
-	// Get Audio From Script
+			if (response.ok) {
+				const data = await response.json();
+				script = data.choices[0].text.trim();
+				status = "Script Generated 💬";
+			} else {
+				status = "Failed to generate script ❌";
+				console.error("Error from OpenAI API:", await response.text());
+			}
+		} catch (error) {
+			status = "Error processing the image ❌";
+			console.error("Error:", error);
+		} finally {
+			status = "Synthesising Speech... 🗣️";
+			synthesise(script);
+		}
+	}
+
+	function synthesise(script) {
+		status = "Done ✅";
+		status = script;
+	}
 </script>
 
 <div class="pt-12">
-	<h3>A (Slightly Snarky) David AttenBot:</h3>
+	<h3>My (Slightly Snarky) David AttenBot:</h3>
 	<div class="flex flex-col py-4 md:flex-row">
 		<div class="w-full md:w-2/5">
 			<video id="webcam" class="w-full aspect-square bg-stone-800" autoplay
 				><track kind="captions" label="No captions available" default /></video
 			>
-			<div class="flex justify-center mt-4">
+			<div class="flex items-center justify-center mt-4">
 				<button
 					class="px-4 pt-1 text-lg rounded bg-stone-800 text-stone-200 hover:scale-105"
 					on:click={takePhoto}
@@ -82,10 +112,12 @@
 					<p>
 						Then, this script is fed to an
 						<a href="https://elevenlabs.io/">ElevenLabs</a>
-						model to synthesise an audio transcript in a lovingly familiar tone.
+						model which I trained to synthesise an audio transcript in a lovingly familiar
+						tone.
 					</p>
 				</div>
 			</div>
+			<i>This can take some time, please be patient.</i>
 		</div>
 	</div>
 	<div

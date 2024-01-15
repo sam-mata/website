@@ -33,8 +33,7 @@
 			While studying, I work as a full-stack web developer at <a
 				href="https://github.com/OrdinoNZ">Ordino</a
 			>, an in-house software team based in Lower Hutt. In this role I lead development of a
-			progress tracking app for dental technicians. This role encompasses many
-			responsibilities, including project management, design, and development.
+			progress tracking app for dental technicians.
 		</p>
 	</section>
 
@@ -44,8 +43,11 @@
 			Occassionally I tinker with side projects, these can be found on
 			<a href="https://github.com/sam-mata">my github portfolio</a>. Most recently, I made
 			<a href="https://twitter.com/charliebholtz/status/1724815159590293764">my very own</a>
-			<i>"david attenbot"</i> - a webcam narrator in the style of a certain nature documentary
-			presenter.
+			<i>"David Attenbot"</i> - a webcam narrator in the style of a certain nature documentary
+			presenter. This is running entirely within
+			<a href="https://kit.svelte.dev/">SvelteKit</a>, through the use of
+			<a href="https://vercel.com/docs/functions/edge-functions">Vercel Edge Functions</a>
+			.
 			<AttenBot />
 		</p>
 	</section>
