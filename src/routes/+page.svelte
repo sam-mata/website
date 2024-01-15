@@ -1,10 +1,11 @@
 <script>
 	import "../global.css";
 	import Footer from "$lib/Footer.svelte";
+	import AttenBot from "$lib/AttenBot.svelte";
 </script>
 
-<body class="flex flex-col items-center m-8 lg:mx-auto lg:w-2/3">
-	<section class="flex flex-col items-center md:flex-row">
+<body class="flex flex-col items-center m-4 lg:mx-auto lg:w-2/3">
+	<section class="flex flex-col items-center py-0 md:flex-row">
 		<h1 class="font-black font-raleway text-[150px] text-stone-800">SM.</h1>
 		<div class="md:pl-6">
 			<h2>Kia Ora!</h2>
@@ -13,10 +14,8 @@
 		</div>
 	</section>
 
-	<div />
-
-	<section class="pt-12 pb-24">
-		<h2>My Work</h2>
+	<section>
+		<h2>About Me</h2>
 		<p>
 			After completing my <a
 				href="https://www.wgtn.ac.nz/explore/degrees/science/overview?major=computer-science"
@@ -31,14 +30,25 @@
 			particularly with regard to natural language processing and computer vision.
 		</p>
 		<p>
-			At the same time I work as a full-stack web developer at <a
+			While studying, I work as a full-stack web developer at <a
 				href="https://github.com/OrdinoNZ">Ordino</a
 			>, an in-house software team based in Lower Hutt. In this role I lead development of a
-			progress tracking app for dental technicians.
+			progress tracking app for dental technicians. This role encompasses many
+			responsibilities, including project management, design, and development.
 		</p>
 	</section>
 
-	<div />
+	<section>
+		<h2>Recent Work</h2>
+		<p>
+			Occassionally I tinker with side projects, these can be found on
+			<a href="https://github.com/sam-mata">my github portfolio</a>. Most recently, I made
+			<a href="https://twitter.com/charliebholtz/status/1724815159590293764">my very own</a>
+			<i>"david attenbot"</i> - a webcam narrator in the style of a certain nature documentary
+			presenter.
+			<AttenBot />
+		</p>
+	</section>
 
 	<section>
 		<h2>Contact</h2>

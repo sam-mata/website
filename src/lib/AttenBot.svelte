@@ -2,6 +2,7 @@
 	// Imports
 	import { onMount } from "svelte";
 	import { OpenAI } from "openai";
+	import wait from "$lib/assets/wait.mp3";
 
 	// Environment Variables
 	import.meta.env.OPENAI_API_KEY;
@@ -12,7 +13,11 @@
 	const elevenLabsVoice = import.meta.env.ELEVENLABS_VOICE;
 
 	// Get Photo From Webcam
-	let videoStream, photo, summary, script, audio;
+	let videoStream,
+		status = "Awaiting Image...",
+		photo,
+		script = "No Script Generated.",
+		audio = wait;
 
 	onMount(async () => {
 		try {
@@ -41,33 +46,56 @@
 	// Get Audio From Script
 </script>
 
-<div class="pt-6">
-	<p>
-		Most recently, I made <a href="https://twitter.com/charliebholtz/status/1724815159590293764"
-			>my very own</a
-		>
-		<i>"david attenbot"</i> - a webcam narrator in the style of a certain nature documentary presenter.
-	</p>
-
-	<div class="flex">
-		<div class="w-2/5">
-			<video id="webcam" class="w-full aspect-square bg-zinc-800" autoplay
+<div class="pt-12">
+	<h3>A (Slightly Snarky) David AttenBot:</h3>
+	<div class="flex flex-col py-4 md:flex-row">
+		<div class="w-full md:w-2/5">
+			<video id="webcam" class="w-full aspect-square bg-stone-800" autoplay
 				><track kind="captions" label="No captions available" default /></video
 			>
-			<button
-				class="px-2 mt-8 text-lg rounded bg-zinc-800 text-zinc-50 hover:scale-105"
-				on:click={takePhoto}
-			>
-				Take Photo
-			</button>
-			{#if photo}
-				<img src={photo} alt="AttenBot View" class="w-full mt-4 aspect-square" />
-			{/if}
+			<div class="flex justify-center mt-4">
+				<button
+					class="px-4 pt-1 text-lg rounded bg-stone-800 text-stone-200 hover:scale-105"
+					on:click={takePhoto}
+				>
+					Start AttenBot
+				</button>
+			</div>
 		</div>
-		<div class="flex flex-col items-center w-3/5">
-			<p>{summary}</p>
-			<p>{script}</p>
-			<p>{audio}</p>
+		<div class="flex flex-col items-center w-full px-4 pt-4 md:w-3/5">
+			<h3 class="pt-4">How does it work?</h3>
+			<div class="py-4">
+				<div class="flex">
+					<h2 class="pr-2">1.</h2>
+					<p>
+						David first analyses and summarises the photo with
+						<a href="https://platform.openai.com/docs/guides/vision"
+							>OpenAI's GPT-4 Vision
+						</a>
+						to generate a script in the style of a BBC earth nature documentary.
+					</p>
+				</div>
+			</div>
+			<div class="py-4">
+				<div class="flex">
+					<h2 class="pr-2">2.</h2>
+					<p>
+						Then, this script is fed to an
+						<a href="https://elevenlabs.io/">ElevenLabs</a>
+						model to synthesise an audio transcript in a lovingly familiar tone.
+					</p>
+				</div>
+			</div>
 		</div>
+	</div>
+	<div
+		class="flex flex-col items-center justify-center mt-8 space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4"
+	>
+		<p class="p-4 rounded bg-stone-800 text-stone-300">
+			Status: {status}
+		</p>
+		<audio controls>
+			<source src={audio} type="audio/mpeg" />
+		</audio>
 	</div>
 </div>

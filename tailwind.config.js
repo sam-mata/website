@@ -8,7 +8,7 @@ export default {
         'montserrat': ['Montserrat', 'sans-serif'],
         'overpass': ['Overpass', 'sans-serif']
       },
-    },
+    }
   },
   plugins: [],
 }

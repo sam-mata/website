@@ -10,7 +10,11 @@
 	}
 
 	h2 {
-		@apply py-1 font-black uppercase font-montserrat text-stone-800;
+		@apply py-1 text-lg font-black uppercase font-montserrat;
+	}
+
+	h3 {
+		@apply font-bold uppercase font-overpass text-stone-800;
 	}
 
 	p {
@@ -18,7 +22,11 @@
 	}
 
 	a {
-		@apply font-bold underline decoration-stone-800 underline-offset-2 decoration-[1.5px];
+		@apply font-bold underline decoration-stone-800 underline-offset-[3px] decoration-[1.5px];
+	}
+
+	section {
+		@apply py-12;
 	}
 }
 
