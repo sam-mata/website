@@ -1,13 +1,14 @@
+// src/routes/api/openai/+server.ts
 import { Configuration, OpenAIApi } from "openai";
 
-export default async function handler(req, res) {
+export async function POST({ request }) {
     const configuration = new Configuration({
         apiKey: process.env.OPENAI_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
-    
-    // Extract data from the request
-    const { photo } = req.body;  // Ensure that 'photo' is passed in the request body
+
+    const requestBody = await request.json();
+    const { photo } = requestBody;
 
     try {
         const response = await openai.createCompletion({
@@ -17,9 +18,19 @@ export default async function handler(req, res) {
                 ${photo}`,
         });
 
-        res.status(200).json(response.data);
+        return new Response(JSON.stringify(response.data), {
+            status: 200,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
     } catch (error) {
         console.error("OpenAI API Error:", error);
-        res.status(500).json({ error: "Error interacting with OpenAI API" });
+        return new Response(JSON.stringify({ error: "Error interacting with OpenAI API" }), {
+            status: 500,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
     }
 }
