@@ -35,7 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@vercel/analytics": "^1.1.1",
+		"@vercel/analytics": "^1.1.2",
 		"@vercel/speed-insights": "^1.0.4",
 		"elevenlabs": "^0.0.4",
 		"openai": "^4.24.7"
