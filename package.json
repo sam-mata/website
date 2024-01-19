@@ -37,7 +37,7 @@
 	"dependencies": {
 		"@vercel/analytics": "^1.1.2",
 		"@vercel/speed-insights": "^1.0.5",
-		"elevenlabs": "^0.0.4",
+		"elevenlabs": "^0.1.1",
 		"openai": "^4.24.7"
 	}
 }
