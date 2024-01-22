@@ -38,6 +38,6 @@
 		"@vercel/analytics": "^1.1.2",
 		"@vercel/speed-insights": "^1.0.7",
 		"elevenlabs": "^0.1.1",
-		"openai": "^4.24.7"
+		"openai": "^4.25.0"
 	}
 }
