@@ -14,7 +14,7 @@
 	let videoStream,
 		status = "Awaiting Webcam Access... ⌛",
 		image,
-		script = "No Script Generated",
+		script = "No Script Generated 🚫",
 		audio = wait;
 
 	onMount(async () => {
@@ -85,7 +85,7 @@
 			>
 			<div class="flex items-center justify-center mt-4">
 				<button
-					class="px-4 pt-1 text-lg rounded bg-stone-800 text-stone-200 hover:scale-105"
+					class="px-4 pt-1 text-lg rounded bg-stone-800 text-stone-200 hover:scale-105 hover:text-stone-50"
 					on:click={takePhoto}
 				>
 					Start AttenBot

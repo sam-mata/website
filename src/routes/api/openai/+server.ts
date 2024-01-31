@@ -11,6 +11,7 @@ export async function POST({ request }) {
     const { photo } = requestBody;
 
     try {
+        
         const response = await openai.createCompletion({
             model: "gpt-4-vision-preview",
             prompt: ` You are a snarky version of Sir David Attenborough. Narrate the picture of the human as if it is a nature documentary, but you are more focused on puns and mockery. 

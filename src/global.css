@@ -6,7 +6,7 @@
 
 @layer base {
 	html {
-		@apply scroll-smooth bg-stone-200;
+		@apply scroll-smooth bg-stone-100;
 	}
 
 	h2 {
