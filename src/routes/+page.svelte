@@ -27,8 +27,18 @@
 				href="https://www.wgtn.ac.nz/explore/postgraduate-programmes/bachelor-of-science-with-honours/requirements?subject=artificial-intelligence-bsc-hons"
 			>
 				honors degree in artificial intelligence</a
-			> at Victoria University of Wellington. My coursework is mostly focused on machine learning,
-			particularly with regard to natural language processing and computer vision.
+			> at Victoria University of Wellington.
+		</p>
+		<p>
+			<a href="https://github.com/sam-mata/SeaLevelAI">My research project</a> involves
+			utilizing evolutionary machine learning algorithms to more efficiently predict changes
+			in ice sheets. In this project I am fortunate to work with Victoria University's
+			<a href="https://www.wgtn.ac.nz/cdsai"
+				>Centre for Data Science and Artificial Intelligence (CDSAI)</a
+			>
+			and <a href="https://www.wgtn.ac.nz/antarctic">Antarctic Research Centre (ARC)</a>.
+			Meanwhile, my coursework is mostly focused on machine learning, particularly with regard
+			to natural language processing and computer vision.
 		</p>
 		<p>
 			At the same time I work as a full-stack web developer at <a
