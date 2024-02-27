@@ -6,7 +6,7 @@
 
 @layer base {
 	html {
-		@apply scroll-smooth bg-stone-200;
+		@apply scroll-smooth bg-stone-100;
 	}
 
 	h2 {
@@ -14,7 +14,7 @@
 	}
 
 	p {
-		@apply py-1 font-medium leading-6 font-overpass text-stone-700;
+		@apply py-2 font-medium leading-6 font-overpass text-stone-700;
 	}
 
 	a {
