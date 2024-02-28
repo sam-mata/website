@@ -15,8 +15,8 @@
 
 	<div />
 
-	<section class="pt-12 pb-16">
-		<h2>My Work</h2>
+	<section class="py-12">
+		<h2>My Studies</h2>
 		<p>
 			After completing my <a
 				href="https://www.wgtn.ac.nz/explore/degrees/science/overview?major=computer-science"
@@ -42,6 +42,23 @@
 			Meanwhile, my coursework is mostly focused on machine learning, particularly with regard
 			to natural language processing, classification, and computer vision.
 		</p>
+	</section>
+
+	<div />
+
+	<section class="pb-12">
+		<h2>My Work</h2>
+		<p>
+			I currently tutor two courses at Victoria University, <a
+				href="https://www.wgtn.ac.nz/courses/comp/261/2021/offering?crn=18314"
+				>Algorithms and Data Structures (COMP-261)</a
+			>
+			and
+			<a href="https://www.wgtn.ac.nz/courses/swen/326/2022/offering?crn=30042"
+				>Safety Critical Systems (SWEN-326)</a
+			>. These each involve leading tutorials for students, running helpdesk sessions, and
+			marking assignments with feedback.
+		</p>
 		<p>
 			At the same time I work as a full-stack web developer at <a
 				href="https://github.com/OrdinoNZ">Ordino</a
@@ -49,8 +66,6 @@
 			progress tracking app for dental technicians.
 		</p>
 	</section>
-
-	<div />
 
 	<section>
 		<h2>Contact</h2>
