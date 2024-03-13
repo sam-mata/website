@@ -12,8 +12,8 @@ dependencies:
     specifier: ^1.0.10
     version: 1.0.10(@sveltejs/kit@2.5.3)(svelte@4.2.12)
   elevenlabs:
-    specifier: ^0.1.6
-    version: 0.1.6
+    specifier: ^0.2.0
+    version: 0.2.0
   openai:
     specifier: ^4.28.5
     version: 4.28.5
@@ -1275,8 +1275,8 @@ packages:
     resolution: {integrity: sha512-+2OAGjUx68xElQhydpcbqH50hE8Vs2K6TkAeLhICYfndb67CVH0UsZaijmRUE3rHlIxU1u0jxwhgVe6fK3YANA==}
     dev: true
 
-  /elevenlabs@0.1.6:
-    resolution: {integrity: sha512-SwHpVRhrEduyEC5puxGbc2awZI/MAUOwkxTCiw4PrskocYQVRT/b/7xhpwMNPwx0bYMdBNTcPbb/oa+7+DNq/Q==}
+  /elevenlabs@0.2.0:
+    resolution: {integrity: sha512-VFsmeKvEqDIeFN6NAjV45c0xzGG9AAZI2XtdOxq/FrLIWLx164D4cXGX6cOQA4I2gF345Wo2GHuaZxC44nbUAw==}
     dependencies:
       command-exists: 1.2.9
       execa: 5.1.1
