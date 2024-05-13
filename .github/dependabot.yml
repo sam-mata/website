@@ -10,6 +10,5 @@ updates:
           - "dependabot"
       labels:
           - "dependencies"
-          - "non-functional"
       reviewers:
           - "sam-mata"
