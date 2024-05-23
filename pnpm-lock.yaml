@@ -12,8 +12,8 @@ dependencies:
     specifier: ^1.0.10
     version: 1.0.10(@sveltejs/kit@2.5.10)(svelte@4.2.17)
   elevenlabs:
-    specifier: ^0.5.0
-    version: 0.5.0
+    specifier: ^0.6.0
+    version: 0.6.0
   openai:
     specifier: ^4.47.1
     version: 4.47.1
@@ -1247,12 +1247,14 @@ packages:
     resolution: {integrity: sha512-+2OAGjUx68xElQhydpcbqH50hE8Vs2K6TkAeLhICYfndb67CVH0UsZaijmRUE3rHlIxU1u0jxwhgVe6fK3YANA==}
     dev: true
 
-  /elevenlabs@0.5.0:
-    resolution: {integrity: sha512-jfex4ecuWIlyAUuMrMJAJNa5MLziqYQOCDw4ZYuoc9PCYLxtHwaYBWpZoDhnYMcceLI7rRRvmbLMcT9HlVMfHA==}
+  /elevenlabs@0.6.0:
+    resolution: {integrity: sha512-w8syefbiy/KeDjsAMjc1CyCbbB+7elHIeAWo/uTzoZ5RIdI0OkVQaM36xO77N7b/BtejbJe/HuSrLbEG75sXjg==}
     dependencies:
       command-exists: 1.2.9
       execa: 5.1.1
       form-data: 4.0.0
+      form-data-encoder: 4.0.2
+      formdata-node: 6.0.3
       node-fetch: 2.7.0
       qs: 6.11.2
       url-join: 4.0.1
@@ -1577,6 +1579,11 @@ packages:
     resolution: {integrity: sha512-qfqtYan3rxrnCk1VYaA4H+Ms9xdpPqvLZa6xmMgFvhO32x7/3J/ExcTd6qpxM0vH2GdMI+poehyBZvqfMTto8A==}
     dev: false
 
+  /form-data-encoder@4.0.2:
+    resolution: {integrity: sha512-KQVhvhK8ZkWzxKxOr56CPulAhH3dobtuQ4+hNQ+HekH/Wp5gSOafqRAeTphQUJAIk0GBvHZgJ2ZGRWd5kphMuw==}
+    engines: {node: '>= 18'}
+    dev: false
+
   /form-data@4.0.0:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
     engines: {node: '>= 6'}
@@ -1592,6 +1599,11 @@ packages:
     dependencies:
       node-domexception: 1.0.0
       web-streams-polyfill: 4.0.0-beta.3
+    dev: false
+
+  /formdata-node@6.0.3:
+    resolution: {integrity: sha512-8e1++BCiTzUno9v5IZ2J6bv4RU+3UKDmqWUQD0MIMVCd9AdhWkO1gw57oo1mNEX1dMq2EGI+FbWz4B92pscSQg==}
+    engines: {node: '>= 18'}
     dev: false
 
   /fraction.js@4.3.7:
