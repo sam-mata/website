@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.6.0
     version: 0.6.0
   openai:
-    specifier: ^4.49.0
-    version: 4.49.0
+    specifier: ^4.50.0
+    version: 4.50.0
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -2254,8 +2254,8 @@ packages:
       mimic-fn: 2.1.0
     dev: false
 
-  /openai@4.49.0:
-    resolution: {integrity: sha512-/UkrBSej5ejZ4vnOFoeFefX7erjp4k3+xoLKkswjLEvgBU9QtCnOUgsfpvHkzTzgDXpqPMCzyQHQXWsgiq2xPw==}
+  /openai@4.50.0:
+    resolution: {integrity: sha512-2ADkNIU6Q589oYHr5pn9k7SbUcrBTK9X0rIXrYqwMVSoqOj1yK9/1OO0ExaWsqOOpD7o58UmRjeKlx9gKAcuKQ==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.11
