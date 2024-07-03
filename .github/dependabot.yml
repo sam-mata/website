@@ -1,14 +1,18 @@
 version: 2
 updates:
-    - package-ecosystem: "npm"
-      directory: "/"
-      schedule:
-          interval: "daily"
-          time: "20:00"
-      assignees:
-          - "sam-mata"
-          - "dependabot"
-      labels:
-          - "dependencies"
-      reviewers:
-          - "sam-mata"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "20:00"
+    assignees:
+      - "sam-mata"
+      - "dependabot"
+    labels:
+      - "dependencies"
+    reviewers:
+      - "sam-mata"
+    groups:
+      npm-dependencies:
+        patterns:
+          - "*"
