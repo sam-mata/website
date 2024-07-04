@@ -13,31 +13,31 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.2.2",
-		"@sveltejs/adapter-vercel": "^5.3.2",
-		"@sveltejs/kit": "^2.5.17",
+		"@sveltejs/adapter-vercel": "^5.4.0",
+		"@sveltejs/kit": "^2.5.18",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@types/eslint": "8.56.7",
-		"@typescript-eslint/eslint-plugin": "^7.14.1",
-		"@typescript-eslint/parser": "^7.13.1",
+		"@typescript-eslint/eslint-plugin": "^7.15.0",
+		"@typescript-eslint/parser": "^7.15.0",
 		"autoprefixer": "^10.4.19",
-		"eslint": "^8.57.0",
+		"eslint": "^9.6.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.41.0",
-		"postcss": "^8.4.38",
+		"postcss": "^8.4.39",
 		"prettier": "^3.3.2",
-		"prettier-plugin-svelte": "^3.2.4",
+		"prettier-plugin-svelte": "^3.2.5",
 		"svelte": "^4.2.18",
-		"svelte-check": "^3.8.1",
+		"svelte-check": "^3.8.4",
 		"tailwindcss": "^3.4.4",
 		"tslib": "^2.6.3",
-		"typescript": "^5.5.2",
-		"vite": "^5.3.2"
+		"typescript": "^5.5.3",
+		"vite": "^5.3.3"
 	},
 	"type": "module",
 	"dependencies": {
 		"@vercel/analytics": "^1.3.1",
 		"@vercel/speed-insights": "^1.0.12",
-		"elevenlabs": "^0.8.1",
-		"openai": "^4.52.0"
+		"elevenlabs": "^0.8.2",
+		"openai": "^4.52.3"
 	}
 }
