@@ -15,11 +15,11 @@ importers:
         specifier: ^1.0.12
         version: 1.0.12(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.3(@types/node@18.19.39)))(svelte@4.2.18)(vite@5.3.3(@types/node@18.19.39)))(svelte@4.2.18)
       elevenlabs:
-        specifier: ^0.8.2
-        version: 0.8.2
+        specifier: ^0.9.0
+        version: 0.9.0
       openai:
-        specifier: ^4.52.3
-        version: 4.52.3
+        specifier: ^4.52.5
+        version: 4.52.5
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.2.2
@@ -830,8 +830,8 @@ packages:
   electron-to-chromium@1.4.690:
     resolution: {integrity: sha512-+2OAGjUx68xElQhydpcbqH50hE8Vs2K6TkAeLhICYfndb67CVH0UsZaijmRUE3rHlIxU1u0jxwhgVe6fK3YANA==}
 
-  elevenlabs@0.8.2:
-    resolution: {integrity: sha512-K4hfRbFuQhcdTWE/m2S180ktiG6ebGOtiN14Z6HdWdcYS2E6IOCTWBTIQNdGRKgLWlEkSVVQerrEbjYV1dyXUQ==}
+  elevenlabs@0.9.0:
+    resolution: {integrity: sha512-2z6QRuNncY9ocJ/4YB0IRCAudSbxpoAVPma+QSKnIjlaoF1G5bjTYyz34U81iMVVEm0NqP3Q9r/3bAPYnYFxBA==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1396,8 +1396,8 @@ packages:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
     engines: {node: '>=6'}
 
-  openai@4.52.3:
-    resolution: {integrity: sha512-IyQLYKGYoEEkUCEm2frPzwHDJ3Ym663KtivnY6pWCzuoi6/HgSIMMxpcuTRS81GH6tiULPYGmTxIvzXdmPIWOw==}
+  openai@4.52.5:
+    resolution: {integrity: sha512-qqH8GsyPE3z06took/2uWOGqRcrZNlRoPAsihpg4jsl0+2Dfelnw6HDDMep0EI2Cfzw75nn3vHRZehep/IZzxg==}
     hasBin: true
 
   optionator@0.9.4:
@@ -2604,7 +2604,7 @@ snapshots:
 
   electron-to-chromium@1.4.690: {}
 
-  elevenlabs@0.8.2:
+  elevenlabs@0.9.0:
     dependencies:
       command-exists: 1.2.9
       execa: 5.1.1
@@ -3181,7 +3181,7 @@ snapshots:
     dependencies:
       mimic-fn: 2.1.0
 
-  openai@4.52.3:
+  openai@4.52.5:
     dependencies:
       '@types/node': 18.19.39
       '@types/node-fetch': 2.6.11
