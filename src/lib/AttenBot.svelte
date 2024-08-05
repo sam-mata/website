@@ -1,5 +1,4 @@
 <script>
-	// Imports
 	import { onMount } from "svelte";
 	import { OpenAI } from "openai";
 	import wait from "$lib/assets/wait.mp3";
@@ -35,7 +34,7 @@
 		canvas.width = 500;
 		canvas.height = 500;
 		canvas.getContext("2d").drawImage(videoElement, 0, 0, canvas.width, canvas.height);
-		let photo = canvas.toDataURL("image/png");
+		let photo = canvas.toDataURL("image/jpeg");
 		status = "Image Taken 📸";
 		status = "Generating Script... 📝";
 		summarise(photo);
@@ -55,7 +54,7 @@
 
 			if (response.ok) {
 				const data = await response.json();
-				script = data.choices[0].text.trim();
+				script = data.content;
 				status = "Script Generated 💬";
 			} else {
 				status = "Failed to generate script ❌";
@@ -80,9 +79,9 @@
 	<h3>My (Slightly Snarky) David AttenBot:</h3>
 	<div class="flex flex-col py-4 md:flex-row">
 		<div class="w-full md:w-2/5">
-			<video id="webcam" class="w-full aspect-square bg-stone-800" autoplay
-				><track kind="captions" label="No captions available" default /></video
-			>
+			<video id="webcam" class="w-full aspect-square bg-stone-800" autoplay>
+				<track kind="captions" label="No captions available" default />
+			</video>
 			<div class="flex items-center justify-center mt-4">
 				<button
 					class="px-4 pt-1 text-lg rounded bg-stone-800 text-stone-200 hover:scale-105 hover:text-stone-50"
@@ -100,8 +99,8 @@
 					<p>
 						David first analyses and summarises the photo with
 						<a href="https://platform.openai.com/docs/guides/vision"
-							>OpenAI's GPT-4 Vision
-						</a>
+							>OpenAI's GPT-4 Vision</a
+						>
 						to generate a script in the style of a BBC earth nature documentary.
 					</p>
 				</div>
