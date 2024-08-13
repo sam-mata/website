@@ -245,7 +245,7 @@
 			or opportunity you'd like to discuss, please get in touch at <a
 				class="font-medium underline text-surface-600-300-token decoration-2 decoration-surface-500-400-token"
 				href="mailto:sammatanz@gmail.com">sammatanz@gmail.com</a
-			>.
+			>, or through one of the platforms below.
 		</p>
 	</section>
 </div>
