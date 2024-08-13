@@ -1,9 +1,8 @@
 <script>
-	import '../app.postcss';
-	// import { TableOfContents } from '@skeletonlabs/skeleton';
-	import { autoModeWatcher } from '@skeletonlabs/skeleton';
+    import '../app.postcss';
+    import { autoModeWatcher } from '@skeletonlabs/skeleton';
 </script>
 
+<title>Sam Mata</title>
 <svelte:head>{@html '<script>(' + autoModeWatcher.toString() + ')();</script>'}</svelte:head>
-<!-- <TableOfContents /> -->
 <slot />
