@@ -35,21 +35,24 @@
 			<div class="my-6">
 				<span class="flex-auto">
 					<div>
-						<dt class="-mx-2 font-medium ">
+						<dt class="-mx-2 font-medium">
 							Bachelor of Science - Computer Science
 						</dt>
-						<p class="text-sm font-semibold text-surface-500-400-token"
-							>Feb 2021 - Jan 2024</p
+						<p
+							class="text-sm font-semibold text-surface-500-400-token"
 						>
+							Feb 2021 - Jan 2024
+						</p>
 					</div>
 
 					<dd
 						class="leading-normal tracking-tight text-surface-500-400-token"
 					>
-						My undergraduate studies started with a  Bachelor of Science in
-						Computer Science to pursue more courses in artificial intelligence. with courses focusing on software
-						development, programming, network engineering, and
-						cybersecurity.
+						My undergraduate studies started with a Bachelor of
+						Science in Computer Science to pursue more courses in
+						artificial intelligence. with courses focusing on
+						software development, programming, network engineering,
+						and cybersecurity.
 					</dd>
 				</span>
 			</div>
@@ -60,7 +63,8 @@
 							Bachelor of Science (Honours) - Artificial
 							Intelligence
 						</dt>
-						<span class="text-sm font-semibold text-surface-500-400-token"
+						<span
+							class="text-sm font-semibold text-surface-500-400-token"
 							>Feb 2024 - Nov 2024</span
 						>
 					</div>
@@ -119,7 +123,7 @@
 				/>
 				<Card
 					title="Ice Sheet Modelling"
-					coverPhoto="src\lib\Antarctic-Modelling.png"
+					coverPhoto="/Antarctic-Modelling.png"
 					subtitle="Research Project"
 					descriptionText="Using evolutionary learning techniques to improve long-term forecasting for changes in the Antarctic ice sheets."
 					badges={[
@@ -131,7 +135,7 @@
 				/>
 				<Card
 					title="Covid Heatmaps"
-					coverPhoto="src\lib\Covid-Heatmap.png"
+					coverPhoto="/Covid-Heatmap.png"
 					subtitle="Interactive Web-App"
 					descriptionText="An online tool for visualising data of the SARS-CoV-2 (Covid-19) virus through interactive global heatmaps."
 					badges={[
@@ -143,7 +147,7 @@
 				/>
 				<Card
 					title="F1 Graphing"
-					coverPhoto="src\lib\F1-Analysis.png"
+					coverPhoto="/F1-Analysis.png"
 					subtitle="Interactive Web-App"
 					descriptionText="An interactive online tool allowing customised user analysis of Formula-1 (F1) data."
 					badges={[
@@ -176,7 +180,8 @@
 						<dt class="-mx-2 font-medium">
 							Academic Tutor - Victoria University of Wellington
 						</dt>
-						<span class="text-sm font-semibold text-surface-500-400-token"
+						<span
+							class="text-sm font-semibold text-surface-500-400-token"
 							>Feb 2024 - Present</span
 						>
 					</div>
@@ -213,7 +218,8 @@
 						<dt class="-mx-2 font-medium">
 							Full Stack Web Developer - Ordino
 						</dt>
-						<span class="text-sm font-semibold text-surface-500-400-token"
+						<span
+							class="text-sm font-semibold text-surface-500-400-token"
 							>Feb 2022 - Present</span
 						>
 					</div>
