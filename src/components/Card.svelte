@@ -17,20 +17,20 @@
 		const baseClasses = 'px-2 py-1 text-xs font-semibold rounded-full';
 		switch (color) {
 			case 'blue':
-				return `${baseClasses} bg-blue-100 text-blue-800`;
+				return `${baseClasses} bg-blue-200 border border-blue-300 text-blue-800`;
 			case 'green':
-				return `${baseClasses} bg-green-100 text-green-800`;
-			case 'red':
-				return `${baseClasses} bg-red-100 text-red-800`;
+				return `${baseClasses} bg-green-200 border border-green-300 text-green-800`;
+			case 'purple':
+				return `${baseClasses} bg-purple-200 border border-purple-300 text-purple-800`;
 			case 'yellow':
-				return `${baseClasses} bg-yellow-100 text-yellow-800`;
+				return `${baseClasses} bg-yellow-200 border border-yellow-300 text-yellow-800`;
 			default:
-				return `${baseClasses} bg-gray-100 text-gray-800`;
+				return `${baseClasses} bg-gray-200 border border-gray-300 text-gray-800`;
 		}
 	}
 </script>
 
-<a class="overflow-hidden card bg-initial card-hover" href={link}>
+<a class="overflow-hidden card bg-initial dark:brightness-90 hover:brightness-100 card-hover" href={link}>
 	<header>
 		<img
 			src={coverPhoto}
@@ -52,6 +52,6 @@
 				<span class={getBadgeClasses(badge.color)}>{badge.text}</span>
 			{/each}
 		</div>
-		<small class="font-bold">{date}</small>
+		<small class="text-sm font-bold">{date}</small>
 	</footer>
 </a>

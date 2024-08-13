@@ -2,19 +2,19 @@
 	import Card from '../components/Card.svelte';
 </script>
 
-<div class="w-5/12 mx-auto my-24">
+<div class="w-3/4 mx-auto my-24 lg:w-5/12">
 	<!-- Intro -->
 	<section class="my-12">
 		<h1 class="font-bold text-7xl">Kia Ora! I'm Sam.</h1>
-		<p class="text-surface-400-500-token">
+		<h2 class="text-xl text-surface-500-400-token">
 			Student & Developer based in Wellington.
-		</p>
+		</h2>
 	</section>
 
 	<!-- Study -->
 	<section class="my-12">
 		<h2
-			class="my-2 text-xl font-medium underline decoration-[3px] decoration-green-600"
+			class="my-2 text-2xl font-medium underline decoration-[3px] decoration-primary-600"
 		>
 			My Study
 		</h2>
@@ -27,17 +27,22 @@
 			study and work with the
 			<a
 				href="https://www.wgtn.ac.nz/cdsai"
-				class="font-medium underline decoration-2 decoration-green-600"
+				class="font-medium underline decoration-2 text-surface-600-300-token decoration-primary-600"
 				>Center for Data Science and Artificial Intelligence (CDSAI)</a
 			>.
 		</p>
-		<dl class="list-dl">
+		<dl class="w-11/12 mx-auto list-dl">
 			<div class="my-6">
-				<span class="bg-green-600 badge">Feb 2021 - Jan 2024</span>
 				<span class="flex-auto">
-					<dt class="font-medium">
-						Bachelor of Science - Computer Science
-					</dt>
+					<div>
+						<dt class="-mx-2 font-medium ">
+							Bachelor of Science - Computer Science
+						</dt>
+						<p class="text-sm font-semibold text-surface-500-400-token"
+							>Feb 2021 - Jan 2024</p
+						>
+					</div>
+
 					<dd
 						class="leading-normal tracking-tight text-surface-500-400-token"
 					>
@@ -49,17 +54,23 @@
 				</span>
 			</div>
 			<div class="my-2">
-				<span class="bg-green-600 badge">Feb 2024 - Nov 2024</span>
 				<span class="flex-auto">
-					<dt class="font-medium">
-						Bachelor of Science (Honours) - Artificial Intelligence
-					</dt>
+					<div>
+						<dt class="-mx-2 font-medium">
+							Bachelor of Science (Honours) - Artificial
+							Intelligence
+						</dt>
+						<span class="text-sm font-semibold text-surface-500-400-token"
+							>Feb 2024 - Nov 2024</span
+						>
+					</div>
+
 					<dd
 						class="leading-normal tracking-tight text-surface-500-400-token"
 					>
 						My postgraduate study is focused on AI, with courses on
 						machine learning, data science, and AI applications. <a
-							class="font-medium underline decoration-2 decoration-green-600"
+							class="font-medium underline decoration-2 text-surface-600-300-token decoration-primary-600"
 							href="https://github.com/sam-mata/evolution-antarctica"
 							>My research project</a
 						>
@@ -68,7 +79,7 @@
 						project is run in collaboration with the
 						<a
 							href="https://www.wgtn.ac.nz/antarctic"
-							class="font-medium underline decoration-2 decoration-green-600"
+							class="font-medium underline decoration-2 text-surface-600-300-token decoration-primary-600"
 						>
 							Antarctic Research Center (ARC)
 						</a>.
@@ -81,7 +92,7 @@
 	<!-- Gallery -->
 	<section class="my-12">
 		<h2
-			class="my-2 text-xl font-medium underline decoration-[3px] decoration-blue-600"
+			class="my-2 text-2xl font-medium underline decoration-[3px] decoration-secondary-600"
 		>
 			Project Gallery
 		</h2>
@@ -94,9 +105,18 @@
 		<div
 			class="previewer-preview flex justify-center items-center my-6 mx-auto transition-[width] duration-200 w-full"
 		>
-			<div
-				class="grid w-full grid-cols-1 gap-4 text-token md:grid-cols-2"
-			>
+			<div class="grid w-full gap-4 grid-cols- text-token md:grid-cols-2">
+				<Card
+					title="Big Data in NZ"
+					subtitle="Web Article"
+					descriptionText="An online article discussing data collection policies in New Zealand, with tools to view and manage your data."
+					badges={[
+						{ text: 'Web-App', color: 'blue' },
+						{ text: 'Article', color: 'purple' },
+					]}
+					link="https://sammata.shinyapps.io/f1-app/"
+					date="August 2024"
+				/>
 				<Card
 					title="Ice Sheet Modelling"
 					coverPhoto="src\lib\Antarctic-Modelling.png"
@@ -140,7 +160,7 @@
 	<!-- Work -->
 	<section class="my-12">
 		<h2
-			class="my-2 text-xl font-medium underline decoration-[3px] decoration-yellow-600"
+			class="my-2 text-2xl font-medium underline decoration-[3px] decoration-tertiary-600"
 		>
 			My Work
 		</h2>
@@ -149,31 +169,36 @@
 		>
 			I have worked in a variety of technical roles:
 		</p>
-		<dl class="list-dl">
+		<dl class="w-11/12 mx-auto list-dl">
 			<div class="my-6">
-				<span class="bg-yellow-600 badge">Feb 2024 - Present</span>
 				<span class="flex-auto">
-					<dt class="font-medium">
-						Academic Tutor - Victoria University of Wellington
-					</dt>
+					<div>
+						<dt class="-mx-2 font-medium">
+							Academic Tutor - Victoria University of Wellington
+						</dt>
+						<span class="text-sm font-semibold text-surface-500-400-token"
+							>Feb 2024 - Present</span
+						>
+					</div>
+
 					<dd
 						class="leading-normal tracking-tight text-surface-500-400-token"
 					>
 						I have tutored three courses at Victoria University:
 						Programming for the Natural and Social Sciences
 						<a
-							class="font-medium underline decoration-2 decoration-yellow-600"
+							class="font-medium underline decoration-2 decoration-tertiary-600"
 							href="https://www.wgtn.ac.nz/courses/comp/132/2021/offering?crn=30095"
 							>(COMP-132)</a
 						>, Algorithms and Data Structures
 						<a
-							class="font-medium underline decoration-2 decoration-yellow-600"
+							class="font-medium underline decoration-2 decoration-tertiary-600"
 							href="https://www.wgtn.ac.nz/courses/comp/261/2024/offering?crn=18314"
 							>(COMP-261)</a
 						>
 						and Safety Critical Systems
 						<a
-							class="font-medium underline decoration-2 decoration-yellow-600"
+							class="font-medium underline decoration-2 decoration-tertiary-600"
 							href="https://www.wgtn.ac.nz/courses/swen/326/2022/offering?crn=30042"
 							>(SWEN-326)</a
 						>. Each of these involve running tutorials, labs, and
@@ -183,11 +208,16 @@
 				</span>
 			</div>
 			<div class="my-2">
-				<span class="bg-yellow-600 badge">Feb 2022 - Present</span>
 				<span class="flex-auto">
-					<dt class="font-medium">
-						Full Stack Web Developer - Ordino
-					</dt>
+					<div>
+						<dt class="-mx-2 font-medium">
+							Full Stack Web Developer - Ordino
+						</dt>
+						<span class="text-sm font-semibold text-surface-500-400-token"
+							>Feb 2022 - Present</span
+						>
+					</div>
+
 					<dd
 						class="leading-normal tracking-tight text-surface-500-400-token"
 					>
@@ -202,9 +232,9 @@
 	</section>
 
 	<!-- Contact -->
-	<section class="my-12">
+	<section class="mt-12 -mb-8">
 		<h2
-			class="my-2 text-xl font-medium underline decoration-[3px] decoration-surface-500-400-token"
+			class="my-2 text-2xl font-medium underline decoration-[3px] decoration-surface-500-400-token"
 		>
 			Contact
 		</h2>
