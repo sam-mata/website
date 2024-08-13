@@ -1,4 +1,13 @@
-<footer class="flex items-stretch justify-center m-6">
+<script>
+    import '../app.postcss';
+    import { autoModeWatcher } from '@skeletonlabs/skeleton';
+</script>
+
+<title>Sam Mata</title>
+<svelte:head>{@html '<script>(' + autoModeWatcher.toString() + ')();</script>'}</svelte:head>
+<slot />
+
+<footer class="flex items-stretch justify-center mb-12">
 	<a href="https://github.com/sam-mata" class="px-5 hover:scale-110">
 		<svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2">
 			<path
