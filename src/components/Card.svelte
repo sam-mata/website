@@ -30,11 +30,11 @@
 	}
 </script>
 
-<a class="overflow-hidden card bg-initial dark:brightness-90 hover:brightness-100 card-hover" href={link}>
+<a class="overflow-hidden card bg-initial card-hover" href={link}>
 	<header>
 		<img
 			src={coverPhoto}
-			class="w-full bg-black/50 aspect-video"
+			class="w-full bg-black/50 dark:brightness-75 aspect-video"
 			alt="Post"
 		/>
 	</header>
@@ -52,6 +52,6 @@
 				<span class={getBadgeClasses(badge.color)}>{badge.text}</span>
 			{/each}
 		</div>
-		<small class="text-sm font-bold">{date}</small>
+		<small class="text-sm font-bold text-surface-500-400-token">{date}</small>
 	</footer>
 </a>

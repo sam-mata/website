@@ -46,8 +46,8 @@
 					<dd
 						class="leading-normal tracking-tight text-surface-500-400-token"
 					>
-						I have completed a 3 year Bachelor of Science in
-						Computer Science, with courses focusing on software
+						My undergraduate studies started with a  Bachelor of Science in
+						Computer Science to pursue more courses in artificial intelligence. with courses focusing on software
 						development, programming, network engineering, and
 						cybersecurity.
 					</dd>
@@ -187,18 +187,18 @@
 						I have tutored three courses at Victoria University:
 						Programming for the Natural and Social Sciences
 						<a
-							class="font-medium underline decoration-2 decoration-tertiary-600"
+							class="font-medium underline decoration-2 text-surface-600-300-token decoration-tertiary-600"
 							href="https://www.wgtn.ac.nz/courses/comp/132/2021/offering?crn=30095"
 							>(COMP-132)</a
 						>, Algorithms and Data Structures
 						<a
-							class="font-medium underline decoration-2 decoration-tertiary-600"
+							class="font-medium underline text-surface-600-300-token decoration-2 decoration-tertiary-600"
 							href="https://www.wgtn.ac.nz/courses/comp/261/2024/offering?crn=18314"
 							>(COMP-261)</a
 						>
 						and Safety Critical Systems
 						<a
-							class="font-medium underline decoration-2 decoration-tertiary-600"
+							class="font-medium underline text-surface-600-300-token decoration-2 decoration-tertiary-600"
 							href="https://www.wgtn.ac.nz/courses/swen/326/2022/offering?crn=30042"
 							>(SWEN-326)</a
 						>. Each of these involve running tutorials, labs, and
@@ -243,7 +243,7 @@
 		>
 			While I tend to keep busy with study and work, If you have a project
 			or opportunity you'd like to discuss, please get in touch at <a
-				class="font-medium underline decoration-2 decoration-surface-500-400-token"
+				class="font-medium underline text-surface-600-300-token decoration-2 decoration-surface-500-400-token"
 				href="mailto:sammatanz@gmail.com">sammatanz@gmail.com</a
 			>.
 		</p>
