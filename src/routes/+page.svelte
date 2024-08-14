@@ -1,5 +1,9 @@
 <script>
 	import Card from '../components/Card.svelte';
+	import IceSheetModelling from '$lib/assets/Antarctic-Modelling_R.avif';
+	import CovidHeatmaps from '$lib/assets/Covid-Heatmap_R.avif';
+	import F1Analysis from '$lib/assets/F1-Analysis_R.avif';
+	import BigData from '$lib/assets/Big-Data.avif';
 </script>
 
 <div class="w-3/4 mx-auto my-24 lg:w-5/12">
@@ -107,11 +111,14 @@
 			here are a few projects you can check out:
 		</p>
 		<div
-			class="previewer-preview flex justify-center items-center my-6 mx-auto transition-[width] duration-200 w-full"
+			class="flex justify-center items-center my-6 mx-auto transition-[width] duration-200 w-full"
 		>
-			<div class="grid w-full gap-4 grid-cols- text-token md:grid-cols-2">
+			<div
+				class="grid w-full gap-4 mx-auto grid-cols- text-token md:grid-cols-2"
+			>
 				<Card
 					title="Big Data in NZ"
+					coverPhoto={BigData}
 					subtitle="Web Article"
 					descriptionText="An online article discussing data collection policies in New Zealand, with tools to view and manage your data."
 					badges={[
@@ -123,7 +130,7 @@
 				/>
 				<Card
 					title="Ice Sheet Modelling"
-					coverPhoto="/Antarctic-Modelling.png"
+					coverPhoto={IceSheetModelling}
 					subtitle="Research Project"
 					descriptionText="Using evolutionary learning techniques to improve long-term forecasting for changes in the Antarctic ice sheets."
 					badges={[
@@ -135,7 +142,7 @@
 				/>
 				<Card
 					title="Covid Heatmaps"
-					coverPhoto="/Covid-Heatmap.png"
+					coverPhoto={CovidHeatmaps}
 					subtitle="Interactive Web-App"
 					descriptionText="An online tool for visualising data of the SARS-CoV-2 (Covid-19) virus through interactive global heatmaps."
 					badges={[
@@ -147,7 +154,7 @@
 				/>
 				<Card
 					title="F1 Graphing"
-					coverPhoto="/F1-Analysis.png"
+					coverPhoto={F1Analysis}
 					subtitle="Interactive Web-App"
 					descriptionText="An interactive online tool allowing customised user analysis of Formula-1 (F1) data."
 					badges={[

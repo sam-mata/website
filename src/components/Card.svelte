@@ -30,12 +30,12 @@
 	}
 </script>
 
-<a class="overflow-hidden card bg-initial card-hover" href={link}>
+<a class="max-w-sm overflow-hidden card bg-initial card-hover" href={link}>
 	<header>
 		<img
 			src={coverPhoto}
-			class="w-full bg-black/50 dark:brightness-50 aspect-video"
-			alt="Post"
+			class="w-full bg-black/50 dark:brightness-[0.85] aspect-video"
+			alt={title}
 		/>
 	</header>
 	<div class="p-4 space-y-4">
@@ -47,7 +47,9 @@
 		</h6>
 		<h3 class="font-bold h3" data-toc-ignore="">{title}</h3>
 		<article>
-			<p class="text-lg tracking-tight text-surface-500-400-token">
+			<p
+				class="text-base tracking-tight lg:text-lg text-surface-500-400-token"
+			>
 				{descriptionText}
 			</p>
 		</article>
