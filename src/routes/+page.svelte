@@ -1,5 +1,9 @@
 <script>
 	import Card from '../components/Card.svelte';
+	import IceSheetModelling from '$lib/assets/Antarctic-Modelling_R.avif';
+	import CovidHeatmaps from '$lib/assets/Covid-Heatmap_R.avif';
+	import F1Analysis from '$lib/assets/F1-Analysis_R.avif';
+	import BigData from '$lib/assets/Big-Data.avif';
 </script>
 
 <div class="w-3/4 mx-auto my-24 lg:w-5/12">
@@ -35,21 +39,24 @@
 			<div class="my-6">
 				<span class="flex-auto">
 					<div>
-						<dt class="-mx-2 font-medium ">
+						<dt class="-mx-2 font-medium">
 							Bachelor of Science - Computer Science
 						</dt>
-						<p class="text-sm font-semibold text-surface-500-400-token"
-							>Feb 2021 - Jan 2024</p
+						<p
+							class="text-sm font-semibold text-surface-500-400-token"
 						>
+							Feb 2021 - Jan 2024
+						</p>
 					</div>
 
 					<dd
 						class="leading-normal tracking-tight text-surface-500-400-token"
 					>
-						My undergraduate studies started with a  Bachelor of Science in
-						Computer Science to pursue more courses in artificial intelligence. with courses focusing on software
-						development, programming, network engineering, and
-						cybersecurity.
+						My undergraduate studies started with a Bachelor of
+						Science in Computer Science to pursue more courses in
+						artificial intelligence. with courses focusing on
+						software development, programming, network engineering,
+						and cybersecurity.
 					</dd>
 				</span>
 			</div>
@@ -60,7 +67,8 @@
 							Bachelor of Science (Honours) - Artificial
 							Intelligence
 						</dt>
-						<span class="text-sm font-semibold text-surface-500-400-token"
+						<span
+							class="text-sm font-semibold text-surface-500-400-token"
 							>Feb 2024 - Nov 2024</span
 						>
 					</div>
@@ -103,11 +111,14 @@
 			here are a few projects you can check out:
 		</p>
 		<div
-			class="previewer-preview flex justify-center items-center my-6 mx-auto transition-[width] duration-200 w-full"
+			class="flex justify-center items-center my-6 mx-auto transition-[width] duration-200 w-full"
 		>
-			<div class="grid w-full gap-4 grid-cols- text-token md:grid-cols-2">
+			<div
+				class="grid w-full gap-4 mx-auto grid-cols- text-token md:grid-cols-2"
+			>
 				<Card
 					title="Big Data in NZ"
+					coverPhoto={BigData}
 					subtitle="Web Article"
 					descriptionText="An online article discussing data collection policies in New Zealand, with tools to view and manage your data."
 					badges={[
@@ -119,7 +130,7 @@
 				/>
 				<Card
 					title="Ice Sheet Modelling"
-					coverPhoto="src\lib\Antarctic-Modelling.png"
+					coverPhoto={IceSheetModelling}
 					subtitle="Research Project"
 					descriptionText="Using evolutionary learning techniques to improve long-term forecasting for changes in the Antarctic ice sheets."
 					badges={[
@@ -131,7 +142,7 @@
 				/>
 				<Card
 					title="Covid Heatmaps"
-					coverPhoto="src\lib\Covid-Heatmap.png"
+					coverPhoto={CovidHeatmaps}
 					subtitle="Interactive Web-App"
 					descriptionText="An online tool for visualising data of the SARS-CoV-2 (Covid-19) virus through interactive global heatmaps."
 					badges={[
@@ -143,7 +154,7 @@
 				/>
 				<Card
 					title="F1 Graphing"
-					coverPhoto="src\lib\F1-Analysis.png"
+					coverPhoto={F1Analysis}
 					subtitle="Interactive Web-App"
 					descriptionText="An interactive online tool allowing customised user analysis of Formula-1 (F1) data."
 					badges={[
@@ -176,7 +187,8 @@
 						<dt class="-mx-2 font-medium">
 							Academic Tutor - Victoria University of Wellington
 						</dt>
-						<span class="text-sm font-semibold text-surface-500-400-token"
+						<span
+							class="text-sm font-semibold text-surface-500-400-token"
 							>Feb 2024 - Present</span
 						>
 					</div>
@@ -213,7 +225,8 @@
 						<dt class="-mx-2 font-medium">
 							Full Stack Web Developer - Ordino
 						</dt>
-						<span class="text-sm font-semibold text-surface-500-400-token"
+						<span
+							class="text-sm font-semibold text-surface-500-400-token"
 							>Feb 2022 - Present</span
 						>
 					</div>

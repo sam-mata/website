@@ -17,32 +17,41 @@
 		const baseClasses = 'px-2 py-1 text-xs font-semibold rounded-full';
 		switch (color) {
 			case 'blue':
-				return `${baseClasses} bg-blue-200 border border-blue-300 text-blue-800`;
+				return `${baseClasses} bg-blue-200 text-blue-800 dark:bg-blue-900 dark:text-blue-300`;
 			case 'green':
-				return `${baseClasses} bg-green-200 border border-green-300 text-green-800`;
+				return `${baseClasses} bg-green-200 text-green-800 dark:bg-green-900 dark:text-green-300`;
 			case 'purple':
-				return `${baseClasses} bg-purple-200 border border-purple-300 text-purple-800`;
+				return `${baseClasses} bg-purple-200 text-purple-800 dark:bg-purple-900 dark:text-purple-300`;
 			case 'yellow':
-				return `${baseClasses} bg-yellow-200 border border-yellow-300 text-yellow-800`;
+				return `${baseClasses} bg-yellow-200 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300`;
 			default:
-				return `${baseClasses} bg-gray-200 border border-gray-300 text-gray-800`;
+				return `${baseClasses} bg-gray-20 text-gray-800 dark:bg-gray-900 dark:text-gray-300`;
 		}
 	}
 </script>
 
-<a class="overflow-hidden card bg-initial card-hover" href={link}>
+<a class="max-w-sm overflow-hidden card bg-initial card-hover" href={link}>
 	<header>
 		<img
 			src={coverPhoto}
-			class="w-full bg-black/50 dark:brightness-75 aspect-video"
-			alt="Post"
+			class="w-full bg-black/50 dark:brightness-[0.85] aspect-video"
+			alt={title}
 		/>
 	</header>
 	<div class="p-4 space-y-4">
-		<h6 class="font-semibold h6 text-surface-600-300-token" data-toc-ignore="">{subtitle}</h6>
+		<h6
+			class="font-semibold h6 text-surface-600-300-token"
+			data-toc-ignore=""
+		>
+			{subtitle}
+		</h6>
 		<h3 class="font-bold h3" data-toc-ignore="">{title}</h3>
 		<article>
-			<p class="text-lg tracking-tight text-surface-500-400-token">{descriptionText}</p>
+			<p
+				class="text-base tracking-tight lg:text-lg text-surface-500-400-token"
+			>
+				{descriptionText}
+			</p>
 		</article>
 	</div>
 	<hr class="opacity-50" />
@@ -52,6 +61,8 @@
 				<span class={getBadgeClasses(badge.color)}>{badge.text}</span>
 			{/each}
 		</div>
-		<small class="text-sm font-bold text-surface-500-400-token">{date}</small>
+		<small class="text-sm font-bold text-surface-500-400-token"
+			>{date}</small
+		>
 	</footer>
 </a>
