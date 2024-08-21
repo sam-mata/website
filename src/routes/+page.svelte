@@ -53,10 +53,12 @@
 						class="leading-normal tracking-tight text-surface-500-400-token"
 					>
 						My undergraduate studies started with a Bachelor of
-						Science in Computer Science to pursue more courses in
-						artificial intelligence. with courses focusing on
+						Engineering, majoring in Software Engineering. After 3
+						years I switched to a Bachelor of Science in Computer
+						Science to graduate and pursue further study in
+						artificial intelligence. My coursework focused on
 						software development, programming, network engineering,
-						and cybersecurity.
+						statistics, computer graphics, and cybersecurity.
 					</dd>
 				</span>
 			</div>
