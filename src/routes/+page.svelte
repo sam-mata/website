@@ -54,8 +54,8 @@
 					>
 						My undergraduate studies started with a Bachelor of
 						Engineering, majoring in Software Engineering. After 3
-						years I switched to a Bachelor of Science in Computer
-						Science to graduate and pursue further study in
+						years I transferred instead complete a Bachelor of Science in Computer
+						Science so I could pursue further study in
 						artificial intelligence. My coursework focused on
 						software development, programming, network engineering,
 						statistics, computer graphics, and cybersecurity.
