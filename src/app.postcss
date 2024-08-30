@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+.section-title {
+	@apply my-2 dark:text-surface-50 text-2xl font-bold  underline decoration-[3px];
+}
+
+.section-content {
+	@apply text-lg leading-tight tracking-tight text-surface-700 dark:text-surface-600;
+}
+
+.list-item {
+	@apply my-6;
+}
+
+.list-item-title {
+	@apply -mx-2 font-medium dark:text-surface-300;
+}
+
+.list-item-subtitle {
+	@apply text-sm font-semibold text-surface-600 dark:text-surface-700;
+}
+
+.list-item-content {
+	@apply leading-normal tracking-tight text-surface-700 dark:text-surface-600;
+}
+
+.link {
+	@apply font-medium underline decoration-2 text-surface-800 dark:text-surface-100;
+}
