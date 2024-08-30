@@ -25,43 +25,43 @@
 			case 'yellow':
 				return `${baseClasses} bg-yellow-200 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300`;
 			default:
-				return `${baseClasses} bg-gray-20 text-gray-800 dark:bg-gray-900 dark:text-gray-300`;
+				return `${baseClasses} bg-gray-200 text-gray-800 dark:bg-gray-900 dark:text-gray-300`;
 		}
 	}
 </script>
 
-<a class="max-w-sm overflow-hidden card bg-initial card-hover" href={link}>
+<a class="max-w-sm overflow-hidden card card-hover" href={link}>
 	<header>
 		<img
 			src={coverPhoto}
-			class="w-full bg-black/50 dark:brightness-[0.85] aspect-video"
+			class="w-full bg-black/50 brightness-90 dark:brightness-[0.85] aspect-video"
 			alt={title}
 		/>
 	</header>
-	<div class="p-4 space-y-4">
+	<div class="p-4 space-y-4 dark:bg-neutral-700">
 		<h6
-			class="font-semibold h6 text-surface-600-300-token"
+			class="font-semibold h6 text-surface-700 dark:text-surface-500"
 			data-toc-ignore=""
 		>
 			{subtitle}
 		</h6>
-		<h3 class="font-bold h3" data-toc-ignore="">{title}</h3>
+		<h3 class="font-bold h3 text-surface-900 dark:text-surface-50" data-toc-ignore="">{title}</h3>
 		<article>
 			<p
-				class="text-base tracking-tight lg:text-lg text-surface-500-400-token"
+				class="text-base tracking-tight lg:text-lg text-surface-700 dark:text-surface-600"
 			>
 				{descriptionText}
 			</p>
 		</article>
 	</div>
-	<hr class="opacity-50" />
-	<footer class="flex items-center justify-between p-4">
+	<hr class="opacity-50 dark:brightness-0" />
+	<footer class="flex items-center justify-between p-4 dark:bg-neutral-700">
 		<div class="flex space-x-2">
 			{#each badges as badge}
 				<span class={getBadgeClasses(badge.color)}>{badge.text}</span>
 			{/each}
 		</div>
-		<small class="text-sm font-bold text-surface-500-400-token"
+		<small class="text-sm font-bold text-surface-600 dark:text-surface-400"
 			>{date}</small
 		>
 	</footer>
